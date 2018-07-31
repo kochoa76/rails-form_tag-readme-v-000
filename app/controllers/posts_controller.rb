@@ -10,6 +10,6 @@ class PostsController < ApplicationController
     @post = Post.create(title: params[:post][:title], description: params[:post][:description])
     @post.save
     redirect_to posts_path
-  end 
+  end
 
 end
